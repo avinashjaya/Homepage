@@ -6,6 +6,15 @@
   <body>
     <h1>Welcome to my application</h1>
     <p>This is a demo homepage for my Git OAuth application.</p>
+    <button type="button" href="">Click Me!</button>
+    <a> </a>
     <p>Hi</p>
   </body>
+  <script>String url = "https://github.com/login/oauth/authorize"
+           + "?client_id=" + clientId
+           + "&redirect_uri=" + redirectUri
+           + "&scope=user";
+
+response.sendRedirect(url);
+</script>
 </html>
