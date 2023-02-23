@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Application Homepage</title>
-  </head>
-  <body>
-    <h1>Welcome to my application</h1>
-    <p>This is a demo homepage for my Git OAuth application.</p>
-    <button type="button" href="">Click Me!</button>
-    <a> </a>
-    <p>Hi</p>
-  </body>
-  <script>String url = "https://github.com/login/oauth/authorize"
-           + "?client_id=" + clientId
-           + "&redirect_uri=" + redirectUri
-           + "&scope=user";
-
-response.sendRedirect(url);
-</script>
+<head>
+  <title>Login with Git</title>
+</head>
+<body>
+  <h1>Login with Git</h1>
+  <form action="https://github.com/login/oauth/authorize" method="get">
+    <input type="hidden" name="client_id" value="<your_client_id>">
+    <input type="hidden" name="redirect_uri" value="<your_redirect_uri>">
+    <input type="submit" value="Login with Git">
+  </form>
+</body>
 </html>
+
